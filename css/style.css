@@ -1,0 +1,314 @@
+@import url('satoshi.css');
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Satoshi-Regular;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+h1 {
+    font-family: Satoshi-Black;
+    font-size: 68px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 25%;
+}
+
+.container {
+    width: 1308px;
+    margin: auto;
+    height: 1000px;
+}
+
+nav {
+    height: 60px;
+    border-radius: 30px;
+    border: 1px #C7C7C7 solid;
+    background-color: white;
+    position: sticky;
+    top: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    z-index: 2;
+}
+
+#menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    margin-left: 35px;
+
+}
+.hero {
+    background-color: rgba(255,255,255,80%);
+    border-radius: 30px 30px 0 0;
+    padding: 20px;
+}
+
+.hero-carousel {
+    display: flex;
+    height: 600px;
+}
+
+.hero-carousel button {
+    background-color: rgb(243, 181, 75);
+    height: 48px;
+    border-radius: 24px;
+    border-width: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Satoshi-Black;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.hero h3 {
+    margin-top: 50px;
+}
+
+.hero-carousel input {
+    border: 1px solid #C1C1C1;
+    border-radius: 30px;
+    padding: 0 30px;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.hero img {
+    width: 650px;
+    height: 600px;
+    display: inline;
+    margin-right: 20px;
+}
+
+.carousel-minis {
+    padding: 0 3px;
+    background-color: rgb(222, 222, 222);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.carousel-minis img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 3px 0;
+}
+
+.hero-text {
+    position: relative;
+    height: 100%;
+}
+
+.hero div {
+    margin: auto;
+}
+
+.hero-search {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-counters {
+    background-color: white;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
